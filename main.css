@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    color: white;
+    text-align: left;
+    line-height: 1.5;
+}
+
+body {
+    font-size: 16px;
+    background: #0b0b0b;
+    font-family: "Plus Jakarta Sans", Helvetica, sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+#content {
+    width: 75%;
+    margin: 0 auto;
+}
+
+header {
+    width: 256px;
+    margin: 0 auto;
+    padding: 1em 3em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4em;
+    padding: 2em;
+    border: 1px solid #171717;
+    border-radius: 1em;
+}
+
+#video {
+    width: 66%;
+}
+
+#download {
+    width: 33%;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+#download img {
+    margin-bottom: 1em;
+}
+
+#download #desc {
+    margin-left: 0.75em;
+}
+
+#download #desc h2 {
+    margin-bottom: 0.5em;
+}
+
+#download #desc p#tag {
+    color: #999999;
+}
+
+#download #desc a {
+    padding: 0.5em;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+#download #desc a .link {
+    transition: color 150ms linear;
+}
+
+#download #desc a:hover .link {
+    color: #bb9af7;
+    transition: color 150ms linear;
+}
+
+#download #desc a img {
+    margin-bottom: 1em;
+}
+
+#download #desc a p {
+    margin: 0;
+}
+
+#download #desc a p#reqs {
+    margin-top: 0.5em;
+    font-size: 0.75em;
+    color: #555555;
+    text-decoration: none;
+}
+
+#socials {
+    margin-top: 0.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+#socials a {
+    padding: 0 !important;
+    display: block;
+    width: 20px;
+}
