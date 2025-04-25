@@ -74,12 +74,12 @@ main {
 }
 
 #download #desc a .link {
+    color: #bb9af7;
     transition: color 150ms linear;
 }
 
 #download #desc a:hover .link {
-    color: #bb9af7;
-    transition: color 150ms linear;
+    color: #9d7cd8;
 }
 
 #download #desc a img {
