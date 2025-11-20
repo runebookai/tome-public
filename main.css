@@ -110,3 +110,39 @@ main {
     display: block;
     width: 20px;
 }
+.announcement-banner {
+    width: 100%;
+    background-color: #bb9af7; /* same purple as links */
+    color: #0b0b0b;           /* override global white */
+    padding: 0.75rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.announcement-banner span {
+    color: #0b0b0b; /* ensure text is dark */
+}
+
+.announcement-banner a {
+    color: #0b0b0b; /* dark text on purple */
+    font-weight: 500;
+    text-decoration: underline;
+    transition: color 150ms linear, text-decoration-color 150ms linear;
+    white-space: nowrap;
+}
+
+.announcement-banner a:hover {
+    color: #1f2933;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .announcement-banner {
+        flex-direction: column;
+        padding: 0.75rem;
+    }
+}
