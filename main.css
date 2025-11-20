@@ -111,11 +111,18 @@ main {
     width: 20px;
 }
 
+/* Announcement banner */
+
 .announcement-banner {
     width: 100%;
-    background-color: #bb9af7; /* same purple as links */
-    color: #0b0b0b;           /* override global white */
-    padding: 0.75rem 1rem;
+    background-color: #bb9af7; /* brand purple */
+    padding: 0.75rem 0;        /* vertical padding only */
+}
+
+/* Inner content matches #content width (75%) and centers */
+.announcement-banner-inner {
+    width: 75%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -124,16 +131,18 @@ main {
     text-align: center;
 }
 
-.announcement-banner span {
-    color: #0b0b0b; /* ensure text is dark */
+/* Override the global * selector inside the banner */
+.announcement-banner,
+.announcement-banner * {
+    color: #0b0b0b !important;  /* dark text on purple */
+    text-align: center;
 }
 
 .announcement-banner a {
-    color: #0b0b0b; /* dark text on purple */
     font-weight: 500;
     text-decoration: underline;
-    transition: color 150ms linear, text-decoration-color 150ms linear;
     white-space: nowrap;
+    transition: color 150ms linear, text-decoration-color 150ms linear;
 }
 
 .announcement-banner a:hover {
@@ -142,8 +151,8 @@ main {
 }
 
 @media (max-width: 600px) {
-    .announcement-banner {
+    .announcement-banner-inner {
         flex-direction: column;
-        padding: 0.75rem;
+        padding: 0 1rem;
     }
 }
